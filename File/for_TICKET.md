@@ -1,17 +1,16 @@
 ---
+created: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - Ticket
 Completed: false
 Sub: false
-created: <% tp.date.now("YYYY-MM-DD") %>
 ---
-
 ```dataviewjs
 const current = dv.current().file.folder;
 const pages = dv.pages().where(p => p.file.folder.startsWith(current));
 
 dv.table(
-  ["File","更新日時"],
+  ["File","Update"],
   pages.map(p => [
     // 表示名をフォルダ基準の相対パスに変換
     dv.fileLink(
@@ -23,7 +22,6 @@ dv.table(
   ])
 );
 ```
-
 ```dataviewjs
 // ターゲット（＝このファイル）
 const current = dv.current().file; 
