@@ -5,6 +5,7 @@ tags:
 Completed: false
 Sub: false
 ---
+
 ```dataviewjs
 const current = dv.current().file.folder;
 const pages = dv.pages().where(p => p.file.folder.startsWith(current));
