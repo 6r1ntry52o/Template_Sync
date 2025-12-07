@@ -14,7 +14,7 @@ FLATTEN file.content
 > ```tasks
 > not done
 > path includes 0_Daily
-> (description does not include [[) AND (no due date)
+> (description does not include [[) OR (no due date)
 > sort by due
 > ```
 
