@@ -7,7 +7,7 @@ FLATTEN file.content
 > [!danger] Do
 > ```tasks
 > not done
-> due before today
+> due before tomorrow
 > sort by due
 > ```
 > ---
