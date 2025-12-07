@@ -218,5 +218,4 @@ dv.table(
   ])
 );
  // ,r[3].toISOString()
-
 ```
