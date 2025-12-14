@@ -1,18 +1,22 @@
+
 ```dataview
-TABLE 
+TABLE due as Due
 FROM "2_Tickets"
 WHERE (completed = false) AND (contains(file.tags, "Ticket"))
-SORT due ASC
+SORT due DESC
 ```
 ```dataview
 TABLE 
 FROM "2_Tickets"
-WHERE (Sub = true) AND (contains(file.tags, "Ticket"))
-SORT due ASC
+WHERE  (completed = true) AND (Sub = true) AND (contains(file.tags, "Ticket"))
+SORT due DESC
 ```
 ```dataview
-TABLE 
+TABLE created as Created, due as Due
 FROM "2_Tickets"
 WHERE (contains(file.tags, "Ticket"))
-SORT due ASC
+SORT file ASC
+```
+
+```
 ```

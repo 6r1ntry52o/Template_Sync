@@ -32,9 +32,9 @@ const pages = dv.pages()
 
 // 行を分類する関数
 function classifyLine(line) {
-  if (/^\s*-\s*\[\s*\]\s+/.test(line)) return "⭕";
+  if (/^\s*-\s*\[\s*\]\s+/.test(line)) return "👾";
   if (/^\s*-\s*\[[xX]\]\s+/.test(line)) return "✅";
-  if (/^\s*-\s+/.test(line)) return "-";
+  if (/^\s*-\s+/.test(line)) return "📝";
   return "その他";
 }
 

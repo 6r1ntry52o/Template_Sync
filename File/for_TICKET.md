@@ -1,7 +1,8 @@
 ---
-created: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - Ticket
+created: <% tp.date.now("YYYY-MM-DD") %>
+due:
 Completed: false
 Sub: false
 ---
@@ -57,13 +58,13 @@ const pages = dv.pages()
 // 行を分類する関数
 function classifyLine(line) {
   if (/^\s*-\s*\[\s*\]\s+/.test(line)) {
-    return "⭕";
+    return "👾";
   }
   if (/^\s*-\s*\[[xX]\]\s+/.test(line)) {
     return "✅";
   }
   if (/^\s*-\s+/.test(line)) {
-    return "-";
+    return "📝";
   }
   return "その他";
 }
