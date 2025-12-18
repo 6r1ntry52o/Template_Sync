@@ -29,7 +29,7 @@ FLATTEN file.content
 > ```
 ```dataview
 TABLE due as Due
-FROM "2_Tickets"
+FROM "1_Tickets"
 WHERE (completed = false) AND (contains(file.tags, "Ticket"))
 SORT due DESC
 ```

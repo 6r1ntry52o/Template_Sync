@@ -1,10 +1,11 @@
 ---
 tags:
   - Ticket
-created: <% tp.date.now("YYYY-MM-DD") %>
-due:
-Completed: false
-Sub: false
+  - mw
+S: <% tp.date.now("YYYY-MM-DD") %>
+E:
+Done: false
+Sts.:
 ---
 
 ```dataviewjs

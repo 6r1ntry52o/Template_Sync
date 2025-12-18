@@ -1,0 +1,28 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("ticket")
+        - '!file.inFolder("9_Template_Sync")'
+    order:
+      - file.name
+      - S
+      - E
+      - Done
+      - G
+      - file.tags
+    sort:
+      - property: created
+        direction: ASC
+      - property: due
+        direction: DESC
+      - property: Done
+        direction: DESC
+    columnSize:
+      file.name: 237
+      note.created: 104
+      note.S: 101
+      note.due: 104
+      note.E: 104
+      note.G: 78

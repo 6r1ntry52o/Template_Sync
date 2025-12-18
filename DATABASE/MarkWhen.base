@@ -1,0 +1,28 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("mw")
+        - '!file.inFolder("9_Template_Sync")'
+    order:
+      - file.name
+      - S
+      - E
+      - G
+      - file.tags
+      - Sts.
+    sort:
+      - property: status
+        direction: DESC
+      - property: G
+        direction: ASC
+      - property: created
+        direction: DESC
+      - property: due
+        direction: ASC
+    columnSize:
+      file.name: 269
+      note.created: 136
+      note.S: 122
+      note.G: 71
