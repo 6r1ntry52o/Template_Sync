@@ -10,7 +10,6 @@ views:
       - S
       - E
       - G
-      - file.tags
       - Sts.
     sort:
       - property: status
